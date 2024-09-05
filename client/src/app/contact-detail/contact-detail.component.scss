@@ -1,0 +1,70 @@
+:host {
+  .contact-detail-container {
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .header p {
+    color: #888;
+  }
+  
+  .header .star {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #ffd700;
+  }
+  
+  .contact-info p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .contact-info strong {
+    color: #007bff;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .actions button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .actions button:hover {
+    background-color: #0056b3;
+  }  
+}

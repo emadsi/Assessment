@@ -1,0 +1,20 @@
+<div class="contact-detail-container">
+  <div *ngIf="contact">
+    <div class="header">
+      <img [src]="contact.image" alt="Contact Image" />
+      <h2>{{ contact.name }}</h2>
+      <p>{{ contact.company }}</p>
+      <span class="star">&#9733;</span>
+    </div>
+    <div class="contact-info">
+      <p><strong>Mobile:</strong> {{ contact.phone }}</p>
+      <p><strong>Email:</strong> {{ contact.email }}</p>
+      <p><strong>Address:</strong> {{ contact.address }}</p>
+    </div>
+    <div class="actions">
+      <button *ngIf="!isEditMode" (click)="onEdit()">Edit</button>
+      <button *ngIf="!isEditMode" (click)="onDelete()">Delete</button>
+      <button *ngIf="isEditMode" (click)="onSave()">Save</button>
+    </div>
+  </div>
+</div>

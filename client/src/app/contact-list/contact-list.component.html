@@ -1,0 +1,18 @@
+<div class="contacts-list-container">
+  <div class="header">
+    <h2>Contacts</h2>
+    <div class="actions">
+      <button (click)="onNewContact()">+</button>
+      <button (click)="onAddRandomContacts()">Add Random</button>
+    </div>
+  </div>
+  <ul>
+    <li *ngFor="let contact of contacts" (click)="router.navigate(['/contact', contact.id])">
+      <img [src]="contact.image" alt="Contact Image" />
+      <div class="contact-info">
+        <h3>{{ contact.name }}</h3>
+        <p>{{ contact.company }}</p>
+      </div>
+    </li>
+  </ul>
+</div>
